@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/mathdots
+# catalog-date 2007-06-01 10:48:38 +0200
+# catalog-license lppl
+# catalog-version 0.8
 Name:		texlive-mathdots
 Version:	0.8
 Release:	1
@@ -48,6 +54,7 @@ commands. The commands may also be used in plain TeX.
 #- source
 %doc %{_texmfdistdir}/source/generic/mathdots/mathdots.dtx
 %doc %{_texmfdistdir}/source/generic/mathdots/mathdots.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ commands. The commands may also be used in plain TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
