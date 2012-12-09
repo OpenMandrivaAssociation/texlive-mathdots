@@ -54,3 +54,17 @@ commands. The commands may also be used in plain TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.8-2
++ Revision: 753775
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.8-1
++ Revision: 718970
+- texlive-mathdots
+- texlive-mathdots
+- texlive-mathdots
+- texlive-mathdots
+
