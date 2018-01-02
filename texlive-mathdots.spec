@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/generic/mathdots
-# catalog-date 2007-06-01 10:48:38 +0200
-# catalog-license lppl
-# catalog-version 0.8
 Name:		texlive-mathdots
-Version:	0.8
-Release:	10
+Version:	0.9
+Release:	1
 Summary:	Commands to produce dots in math that respect font size
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/mathdots
@@ -36,14 +30,10 @@ commands. The commands may also be used in plain TeX.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/mathdots/mathdots.sty
-%{_texmfdistdir}/tex/generic/mathdots/mathdots.tex
-%doc %{_texmfdistdir}/doc/generic/mathdots/README
-%doc %{_texmfdistdir}/doc/generic/mathdots/mathdots.pdf
-%doc %{_texmfdistdir}/doc/generic/mathdots/mdtest.tex
+%{_texmfdistdir}/tex/generic/mathdots
+%doc %{_texmfdistdir}/doc/generic/mathdots
 #- source
-%doc %{_texmfdistdir}/source/generic/mathdots/mathdots.dtx
-%doc %{_texmfdistdir}/source/generic/mathdots/mathdots.ins
+%doc %{_texmfdistdir}/source/generic/mathdots
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,17 +44,3 @@ commands. The commands may also be used in plain TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.8-2
-+ Revision: 753775
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.8-1
-+ Revision: 718970
-- texlive-mathdots
-- texlive-mathdots
-- texlive-mathdots
-- texlive-mathdots
-
