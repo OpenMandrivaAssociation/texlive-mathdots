@@ -1,13 +1,13 @@
 Name:		texlive-mathdots
-Version:	0.9
-Release:	2
+Version:	34301
+Release:	1
 Summary:	Commands to produce dots in math that respect font size
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/mathdots
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +21,12 @@ scripts, as well as in response to LaTeX size changing
 commands. The commands may also be used in plain TeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -37,7 +37,8 @@ commands. The commands may also be used in plain TeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
