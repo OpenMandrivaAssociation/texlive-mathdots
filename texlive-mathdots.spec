@@ -1,6 +1,6 @@
 Name:		texlive-mathdots
 Version:	34301
-Release:	1
+Release:	2
 Summary:	Commands to produce dots in math that respect font size
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/mathdots
