@@ -3,7 +3,7 @@ Version:	34301
 Release:	2
 Summary:	Commands to produce dots in math that respect font size
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/mathdots
+URL:		https://www.ctan.org/tex-archive/macros/generic/mathdots
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdots.doc.r%{version}.tar.xz
